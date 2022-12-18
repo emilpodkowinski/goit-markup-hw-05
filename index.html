@@ -12,7 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link class="link" rel="stylesheet" href="/goit-markup-hw-04/css/styles.css" />
+    <link class="link" rel="stylesheet" href="/goit-markup-hw-05/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,8 +26,8 @@
       <a href="#" class="logo"><span class="logo-blue"> Web</span>Studio</a>
       <nav class="navigation">
         <ul class="item">
-          <li><a href="#" class="navigation-theme">Agencja</a></li>
-          <li><a href="/goit-markup-hw-04/portfolio.html" class="navigation-theme">Portfolio </a></li>
+          <li><a href="/goit-markup-hw-05/index.html" class="agency-active">Agencja</a></li>
+          <li><a href="/goit-markup-hw-05/portfolio.html" class="portfolio">Portfolio</a></li>
           <li><a href="#" class="navigation-theme">Kontakt</a></li>
         </ul>
       </nav>
@@ -35,7 +35,7 @@
         <li><a href="mailto:info@devstudio.com" class="contacts">
           <svg class="envelope">
           <use
-          href="/goit-markup-hw-04/images/icons.svg#icon-envelope">
+          href="/goit-markup-hw-05/images/icons.svg#icon-envelope">
           </use>
         </svg>info@devstudio.com 
       </a>
@@ -44,7 +44,6 @@
           <svg class="smartphone">
             <use
             href="/goit-markup-hw-04/images/icons.svg#icon-smartphone">
-
             </use>
           </svg>+48 111 111 111</a></li>
       </ul>
@@ -56,19 +55,21 @@
         <div class="container">
         <h1 class="heading1">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
         <div class="button-position">
-          <button type="button" class="selector-studio">Zamów usługę</button>
+          <button type="button" class="selector-studio" data-modal-open>Zamów usługę</button>
+        </div>
         </div>
         </div>
       </section>
       <!--OUR STRENGTHS-->
       <div class="container section">
         <ul class="article-position">
-          <li>
+          <li class="svg-icon-them">
             <svg class="icons-h2">
               <use
               href="/goit-markup-hw-04/images/icons.svg#icon-antenna-1">
               </use>
             </svg>
+            <div>
             <hgroup>
               <h2 class="heading2">LOREM IPSUM</h2>
               <p class="article">
@@ -77,7 +78,7 @@
               </p>
             </hgroup>
           </li>
-          <li>
+          <li class="svg-icon-them">
             <svg class="icons-h2">
               <use
               href="/goit-markup-hw-04/images/icons.svg#icon-clock-1">
@@ -91,7 +92,7 @@
               </p>
             </hgroup>
           </li>
-          <li>
+          <li class="svg-icon-them" >
             <svg class="icons-h2">
               <use
               href="/goit-markup-hw-04/images/icons.svg#icon-diagram-1">
@@ -105,7 +106,7 @@
               </p>
             </hgroup>
           </li>
-          <li>
+          <li class="svg-icon-them">
             <svg class="icons-h2">
               <use
               href="/goit-markup-hw-04/images/icons.svg#icon-astronaut-1">
@@ -122,33 +123,42 @@
         </ul>
       </div>
       <!--WHAT WE DO-->
-      <section>
+      <section class="services-position">
         <h3 class="heading3i4">Czym się zajmujemy</h3>
         <div>
           <ul class="services">
             <li>
+              <div class="services-them">
               <img
                 src="/goit-markup-hw-03/images/services/programmingService.jpg"
                 alt="man is typing on the keyboard"
                 width="370"
                 height="294"
               />
+              <p class="services-description">APLIKACJE KOMPUTEROWE</p>
+              </div>
             </li>
             <li>
+              <div class="services-them">
               <img
                 src="/goit-markup-hw-03/images/services/applicationDevelopment.jpg"
                 alt="the man makes a call"
                 width="370"
                 height="294"
               />
+              <p class="services-description">APLIKACJE MOBILNE</p>
+              </div>
             </li>
             <li>
+              <div class="services-them">
               <img
                 src="/goit-markup-hw-03/images/services/creatingGraphics.jpg"
                 alt="man holding a tablet"
                 width="370"
                 height="294"
               />
+              <p class="services-description">ROZWIĄZANIA GRAFICZNE</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -168,7 +178,8 @@
               <p class="name">John Doe</p>
               <p class="occupation">Product Designer</p>
             </div>
-            <div class="social-media-position">
+            <ul class="social-media-position">
+              <li>
               <a href="#" class="social-media-bg">
               <svg height="auto" width="20">
                 <use
@@ -176,6 +187,8 @@
                 </use>
               </svg>
               </a>
+              </li>
+              <li>
               <a href="#" class="social-media-bg">
               <svg height="auto" width="20">
                   <use
@@ -183,6 +196,8 @@
                   </use>
                 </svg>
               </a>
+              </li>
+              <li>
               <a href="#" class="social-media-bg">
                 <svg height="auto" width="20">
                     <use
@@ -190,6 +205,8 @@
                     </use>
                   </svg>
               </a>
+              </li>
+              <li>
               <a href="#" class="social-media-bg">
                   <svg height="auto" width="20">
                       <use
@@ -197,7 +214,8 @@
                       </use>
                     </svg>
               </a>
-            </div>
+              </li>
+            </ul>
           </li>
           <li class="employess-theme">
             <img
@@ -210,7 +228,8 @@
               <p class="name">John Doe</p>
               <p class="occupation">Frontend Developer</p>
             </div>
-            <div class="social-media-position">
+            <ul class="social-media-position">
+              <li>
               <a href="#" class="social-media-bg">
               <svg height="auto" width="20">
                 <use
@@ -218,6 +237,8 @@
                 </use>
               </svg>
               </a>
+              </li>
+              <li>
               <a href="#" class="social-media-bg">
               <svg height="auto" width="20">
                   <use
@@ -225,13 +246,17 @@
                   </use>
                 </svg>
               </a>
+              </li>
+              <li>
               <a href="#" class="social-media-bg">
-                <svg height="auto" width="20" >
+                <svg height="auto" width="20">
                     <use
                     href="/goit-markup-hw-04/images/icons.svg#icon-facebook-1">
                     </use>
                   </svg>
               </a>
+              </li>
+              <li>
               <a href="#" class="social-media-bg">
                   <svg height="auto" width="20">
                       <use
@@ -239,7 +264,8 @@
                       </use>
                     </svg>
               </a>
-            </div>
+              </li>
+            </ul>
           </li>
           <li class="employess-theme">
             <img
@@ -252,7 +278,8 @@
               <p class="name">John Doe</p>
               <p class="occupation">Marketing</p>
             </div>
-            <div class="social-media-position">
+            <ul class="social-media-position">
+              <li>
               <a href="#" class="social-media-bg">
               <svg height="auto" width="20">
                 <use
@@ -260,6 +287,8 @@
                 </use>
               </svg>
               </a>
+              </li>
+              <li>
               <a href="#" class="social-media-bg">
               <svg height="auto" width="20">
                   <use
@@ -267,6 +296,8 @@
                   </use>
                 </svg>
               </a>
+              </li>
+              <li>
               <a href="#" class="social-media-bg">
                 <svg height="auto" width="20">
                     <use
@@ -274,6 +305,8 @@
                     </use>
                   </svg>
               </a>
+              </li>
+              <li>
               <a href="#" class="social-media-bg">
                   <svg height="auto" width="20">
                       <use
@@ -281,7 +314,8 @@
                       </use>
                     </svg>
               </a>
-            </div>
+              </li>
+            </ul>
           </li>
           <li class="employess-theme">
             <img
@@ -294,7 +328,8 @@
               <p class="name">John Doe</p>
               <p class="occupation">Ul Designer</p>
             </div>
-            <div class="social-media-position">
+            <ul class="social-media-position">
+              <li>
               <a href="#" class="social-media-bg">
               <svg height="auto" width="20">
                 <use
@@ -302,6 +337,8 @@
                 </use>
               </svg>
               </a>
+              </li>
+              <li>
               <a href="#" class="social-media-bg">
               <svg height="auto" width="20">
                   <use
@@ -309,6 +346,8 @@
                   </use>
                 </svg>
               </a>
+              </li>
+              <li>
               <a href="#" class="social-media-bg">
                 <svg height="auto" width="20">
                     <use
@@ -316,14 +355,17 @@
                     </use>
                   </svg>
               </a>
+              </li>
+              <li >
               <a href="#" class="social-media-bg">
-                  <svg height="auto" width="20">
+                  <svg height="auto" width="20" class="icons-sm">
                       <use
                       href="/goit-markup-hw-04/images/icons.svg#icon-linkedin-1">
                       </use>
                     </svg>
               </a>
-            </div>
+              </li>
+            </ul>
           </li>
         </ul>
         </div>
@@ -450,6 +492,14 @@
       </div>
       </div>
     </footer>
+
+    <div  class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>x</button> 
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
 
